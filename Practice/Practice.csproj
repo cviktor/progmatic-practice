@@ -44,9 +44,12 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="Cage.cs" />
+    <Compile Include="Cat.cs" />
+    <Compile Include="Dog.cs" />
     <Compile Include="InvalidBirthYearException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tiger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

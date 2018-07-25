@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    class Animal
+    abstract class Animal
     {
         public string Name { get; set; }
 
@@ -41,6 +41,7 @@ namespace Practice
             Console.WriteLine("{0} állat {1}-ben született", Name, BirthYear);
         }
 
+        public abstract void Eat();
 
     }
 }
