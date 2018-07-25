@@ -10,7 +10,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cage = new Cage<string>();
+            cage.Add("csillámpóni");
+
             Console.ReadKey();
         }
     }
