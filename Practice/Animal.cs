@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
+    public delegate void AnimalEatenEventHandler(string name);
+
     abstract class Animal
     {
+        public event AnimalEatenEventHandler HasEaten;
+
         public string Name { get; set; }
 
         private int _birthYear;
