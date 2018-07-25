@@ -19,6 +19,7 @@ namespace Practice
         public override void Eat()
         {
             Console.WriteLine("A tigris eszik");
+            RaiseHasEaten();
         }
     }
 }

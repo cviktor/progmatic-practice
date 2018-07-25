@@ -47,5 +47,13 @@ namespace Practice
 
         public abstract void Eat();
 
+        protected void RaiseHasEaten()
+        {
+            if (HasEaten != null)
+            {
+                HasEaten(Name);
+            }
+        }
+
     }
 }

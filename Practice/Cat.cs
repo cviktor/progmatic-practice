@@ -19,6 +19,8 @@ namespace Practice
         public override void Eat()
         {
             Console.WriteLine("A macska eszik");
+            RaiseHasEaten();
+
         }
     }
 }
