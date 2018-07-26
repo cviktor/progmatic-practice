@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    class Cat : Animal
+    class Cat : Animal, IHomePet
     {
         public Cat(int birthYear) : base(birthYear)
         {
@@ -21,6 +21,11 @@ namespace Practice
             Console.WriteLine("A macska eszik");
             RaiseHasEaten();
 
+        }
+
+        public void Pet()
+        {
+            Console.WriteLine("A macska megint kaját kunyerál miközbe simogatom");
         }
     }
 }

@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    class Cage<T>
+    class Cage<T> where T : Animal
     {
         private List<T> _animals;
+
+        public IEnumerable<T> Animals
+        {
+            get
+            {
+                return _animals;
+            }
+        }
 
         public Cage()
         {
@@ -21,9 +29,14 @@ namespace Practice
         }
 
         //Ezt kell befejezni.
-        //public T Find()
-        //{
+        public T Find(Func<Animal, bool> predicate)
+        {
+            foreach (var animal in _animals)
+            {
+                if (predicate(animal)) return animal;
+            }
 
-        //}
+            throw new InvalidOperationException("Az állat nem található");
+        }
     }
 }
